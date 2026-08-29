@@ -1,10 +1,10 @@
-# Medical Insurance Cost Predictor 🏥💸
+# Medical Insurance Cost Predictor
 
 **Goal:** An end-to-end Machine Learning regression project that predicts the medical insurance costs of individuals based on their demographic and lifestyle data.
 
 This project serves as a practical implementation of data preprocessing, feature engineering, and polynomial regression with regularization.
 
-## 📊 The Dataset
+## The Dataset
 The model is trained on a public medical insurance dataset containing 1,338 records. 
 Features included:
 * **Age:** Age of the primary beneficiary
@@ -15,13 +15,13 @@ Features included:
 * **Region:** The beneficiary's residential area in the US (northeast, southeast, southwest, northwest)
 * **Charges:** Individual medical costs billed by health insurance (Target Variable)
 
-## 🧠 Model Architecture
+## Model Architecture
 * **Algorithm:** Polynomial Regression with Ridge (L2) Regularization.
 * **Why Ridge?** Medical data often has complex, non-linear interactions (e.g., the compounding cost effect of high BMI *and* smoking). Polynomial features capture these relationships, while Ridge regularization penalizes excessive weights to prevent overfitting.
 * **Pipeline:** The data flows through a Scikit-Learn `Pipeline` utilizing `StandardScaler`, `PolynomialFeatures(degree=2)`, and `Ridge(alpha=1.0)`.
 * **Performance:** The model achieves an $R^2$ score of ~0.84, successfully explaining 84% of the variance in medical costs.
 
-## 📁 Project Structure
+## Project Structure
 \`\`\`text
 insurance-cost-predictor/
 ├── data/
@@ -37,7 +37,7 @@ insurance-cost-predictor/
 └── README.md                # Project documentation
 \`\`\`
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 **1. Clone the repository and install dependencies:**
 \`\`\`bash
